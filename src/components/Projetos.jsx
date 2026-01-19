@@ -11,30 +11,35 @@ function Projetos() {
             id: 1,
             image: PetAdopt,
             nome: "PetAdopt",
-            descricao: "Projeto de adoção de pets desenvolvido com HTML, CSS e Javascript( Array, Objetos e Array de Objetos )."
+            descricao: "Projeto de adoção de pets desenvolvido com HTML, SCSS e Javascript( Array, Objetos e Array de Objetos )."
         },
         {
             id: 2,
             image: ReciclaTech,
             nome: "ReciclaTech",
-            descricao: "Plataforma de reciclagem de eletrônicos criada com React e Node.js."
+            descricao: "Plataforma de reciclagem de eletrônicos criada com React e Node.js.",
+            link: "https://recicla-tech-ebon-psi.vercel.app/"
         },
         {
             id: 3,
             image: VerdeAcao,
             nome: "VerdeAção",
-            descricao: "Plataforma de ações ambientais desenvolvida com React e Node.js."
+            descricao: "Plataforma de ações ambientais desenvolvida com HTML, SCSS, Box-Model, e JavaScript.",
+            link: "https://verde-acao-three.vercel.app/"
         }
         ,{
             id: 4,
             image: GameJam,
             nome: "GameJam",
-            descricao: "Plataforma de desenvolvimento voltada para competições de jogos criada com HTML, CSS, JavaScript."
+            descricao: "Plataforma de desenvolvimento voltada para competições de jogos criada com HTML, CSS, Box-Model, JavaScript.",
+            link: "https://game-jam-ten.vercel.app/"
         }
     ])
     return (
         <>
             <h1>Projetos</h1>
+            <p>Github: https://github.com/jeffersondavidsds</p>
+            <p>Linkedin: https://www.linkedin.com/in/jeffersonsilvadev/</p>
 
         <article> 
 {projetos.map((item)=>(
