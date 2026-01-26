@@ -2,14 +2,14 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "../Home/Home.jsx";
 import Projetos from "../Projetos/Projetos.jsx";
 import Sobre from "../Sobre/Sobre.jsx";
-
+import Logo from "../../assets/logobedev.png"
 import styles from "./NavBar.module.scss";
 
 function NavBar() {
   return (
     <BrowserRouter>
     <nav className={styles.navBarHeader}>
-        <img src="https://imgs.search.brave.com/Zac_zcVoX8QgmzkI2RRaE56HE67h-Vg3PLgAqY5x0jo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzYxLzIvdXgtaW5u/b3ZhdGlvbi1sb2dv/LXBuZ19zZWVrbG9n/by02MTIwMjIucG5n" alt="Logo" />
+        <img src={Logo} alt="Logo" />
       <h1>Jefferson David</h1>
       <ul>
         <li><Link to="/">Home</Link></li>
