@@ -10,7 +10,7 @@ function NavBar() {
     <BrowserRouter>
     <nav className={styles.navBarHeader}>
         <img src={Logo} alt="Logo" />
-      <h1>Jefferson David</h1>
+      <h1>Portifólio</h1>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/projetos">Projetos</Link></li>
