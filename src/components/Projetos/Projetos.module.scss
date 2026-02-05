@@ -39,4 +39,46 @@
         font-size: 1rem;
         color: #555;
     }
+
+    .botaoLink{
+        background-color: #cccbcb;
+        width: 8rem;
+        height: 5vh;
+        border-radius: 40px;
+        font-family: "Inter";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        position: relative;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(32, 32, 32);
+        font-weight:bold ;
+        cursor: pointer;
+        overflow:visible;
+        z-index: 1;
+        box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+
+    }
+
+    .botaoLink::before{
+        content: '';
+        width: 0;
+        height: 3rem;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #ff5e00 0%, #fca21a 100%);
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+    }
+
+    .botaoLink:hover::before{
+        width: 9em;
+    }
+
 }

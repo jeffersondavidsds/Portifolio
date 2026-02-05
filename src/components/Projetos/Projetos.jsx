@@ -3,6 +3,7 @@ import PetAdopt from "../../assets/petadopt.jpeg"
 import ReciclaTech from "../../assets/reciclatech.jpeg"
 import VerdeAcao from "../../assets/verdeacao.jpeg"
 import GameJam from "../../assets/gamejam.jpeg"
+import Connecta from "../../assets/connecta.jpg"
 
 import styles from "./Projetos.module.scss"
 
@@ -13,7 +14,8 @@ function Projetos() {
             id: 1,
             imagem: PetAdopt,
             nome: "PetAdopt",
-            descricao: "Projeto de adoção de pets desenvolvido com HTML, SCSS e Javascript( Array, Objetos e Array de Objetos )."
+            descricao: "Projeto de adoção de pets desenvolvido com HTML, SCSS e Javascript( Array, Objetos e Array de Objetos ).",
+            link: "https://desafio-final-conect.vercel.app/"
         },
         {
             id: 2,
@@ -36,6 +38,13 @@ function Projetos() {
             descricao: "Plataforma de desenvolvimento voltada para competições de jogos criada com HTML, CSS, Box-Model, JavaScript.",
             link: "https://game-jam-ten.vercel.app/"
         }
+        ,{
+            id: 5,
+            imagem: Connecta,
+            nome: "Connecta",
+            descricao: "Projeto Web pensado para causas sociais e educação, nesta plataform foram utilizadas React+Vite, Javascript, flexbox, Box-Model, Browser-router, useState",
+            link: "https://desafio-final-conect.vercel.app/"
+        }
     ])
 return (
   
@@ -45,6 +54,7 @@ return (
             <img src={item.imagem} alt="" />
             <h2> {item.nome} </h2>
             <p> {item.descricao} </p>
+            <a className={styles.botaoLink} href={item.link} target="_blank" rel="noopener noreferrer">Ver Projeto</a>
           </article>
         ))}
       </section>

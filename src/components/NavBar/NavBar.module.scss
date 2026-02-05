@@ -4,21 +4,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Inter";
 
     img{
         height: 60px;
         border-radius: 5px;
     }
-    h1{
-        color: white;
-        margin: 0;
-        font-size: 40px;
-    }
 
 ul{
+        
         list-style: none;
         display: flex;
-        gap: 15px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 75.7%;
+        
     }
 
     a{
@@ -27,9 +29,9 @@ ul{
         font-weight: bold;
 
         &:hover{
-            text-decoration: underline;
-        }
+            color: chocolate;
     }
+}
 
 
 }
